@@ -6,43 +6,43 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
-class CategoryController extends Controller
+class EventController extends Controller
 {
     /**
-     * @Route("/categories", name="category_list")
+     * @Route("/events", name="event_list")
      */
     public function indexAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('category/index.html.twig', [
+        return $this->render('event/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')) . DIRECTORY_SEPARATOR,
         ]);
     }
 
     /**
-     * @Route("/category/create", name="category_create")
+     * @Route("/event/create", name="event_create")
      */
     public function createAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('category/create.html.twig', [
+        return $this->render('event/create.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')) . DIRECTORY_SEPARATOR,
         ]);
     }
 
     /**
-     * @Route("/category/edit/{id}", name="category_edit")
+     * @Route("/event/edit/{id}", name="event_edit")
      */
     public function editAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('category/edit.html.twig', [
+        return $this->render('event/edit.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')) . DIRECTORY_SEPARATOR,
         ]);
     }
 
     /**
-     * @Route("/category/delete/{id}", name="category_delete")
+     * @Route("/event/delete/{id}", name="event_delete")
      */
     public function deleteAction(Request $request)
     {
